@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    transition: 0.5s;
+}
+
+.navbar.top {
+    background: transparent;
+}
+
+.navbar a {
+    color: #2e9dd4  ;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: #2e9dd4 4px solid;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-top: 20px !important;
+    font-size: 18px;
+}
+
+.navbar a:focus, .navbar a:hover {
+    text-decoration: none;
+    z-index: 10;
+}
+
+.logo {
+    width: 316px;
+    position: fixed;
+    top: -21px;
+    left: 10px;
+    z-index: -10000;
+    font-weight: 600;
+}
+
+/* Header */
+.hero {
+    background: url('../images/KarinaAbras_14.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.hero .content h1 {
+    font-size: 55px;
+}
+
+.hero .content p {
+    font-size: 23px;
+    max-width: 600px;
+    margin: 20px 0 30px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero * {
+    z-index: 10;
+}
+
+/* Icons */
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.icons i {
+    background-color: #2e9dd4;
+    color: #4b4b4d;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.cases img:hover {
+    opacity: 0.7;
+}
+
+.team img {
+    border-radius: 50%;
+}
+
+/* Callback form */
+.callback-form {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.callback-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.callback-form .form-control {
+    margin-bottom: 15px;
+}
+
+.callback-form input {
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: #4b4b4d  1px solid;
+}
+
+.callback-form input:focus {
+    outline-color: #2e9dd4;
+}
+
+.callback-form .btn {
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+/* Post */
+.post {
+    padding: 50px 30px;
+}
+
+.post h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+    margin-bottom: 30px;
+}
+
+.post img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 144px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #2e9dd4;
+}
+
+.footer .social > * {
+    margin-right: 30px;
+}
+
+/* Mobile */
+@media(max-width: 780px) {
+    .navbar {
+        flex-direction: column;
+        height: 85px !important;
+        padding: 5px 20px !important;
+    }
+
+    .navbar h1 {
+        margin-top: 0px !important;
+        margin-bottom: 5px !important;
+        padding: 0px !important;
+    }
+
+    .navbar a {
+        padding: 10px 4px;
+        margin: 0 3px;
+    }
+
+    .flex-items {
+        flex-direction: column;
+    }
+
+    .flex-columns .column, .flex-grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .team img {
+        width: 70%;
+    }
+
+    .flex-columns .column, .flex-grid .column  img {
+        width: 100%;
+    }
+
+    .navbar ul {
+        margin-top: 45px !important;
+        font-size: 16px;
+    }
+
+    .navmenu {
+        width: 100% !important;
+    }
+
+    .hero nav { 
+        width: 100% !important;
+    }
+
+    .navbar .logo { 
+        left: 25%;
+        top: 0px;
+    }
+}
+ 
+.bg-secondary p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.bg-secondary ul {
+    margin-left: 20px;
+}
+
+.bg-secondary li {
+    margin-bottom: 10px;
+}
+
+.bg-secondary h2 {
+    margin-bottom: 20px;
+}
+
+.surf p, .valores p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 35px;
+}
+
+.historico {
+    text-align: justify;
+    background: #2e9dd4;
+    color: #4b4b4d  ;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.atividades {
+    font-size: 18px;
+}
+
+.bg-secondary ul {
+    font-size: 18px;
+    font-weight: bold;
+    width: 95%;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.bg-secondary li {
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.local p, .parceria p, .section-header, .bg-secondary {
+    color: #f4f4f4;
+}
+
+.local p, .parceria p, .bg-secondary p {
+    font-weight: normal;
+}
+
+.section-header {
+    padding: 5px 15px;
+}
+
+.section-header h2 {
+    margin: 25px 0;
+}
+
+.navbar a {
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #2e9dd4;
+    font-weight: bold;
+}
+
+.text-primary h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hero .content h1 {
+    font-size: 45px;
+}
+
+.hero .content h2 {
+    font-size: 35px;
+}
+
+.navbar {
+    height: 55px;
+    padding: 0 15px;
+}
+
+.navbar a {
+    padding: 6px 15px;
+    margin: 0 5px;
+}
+
+.atividades, .atividades h2, .galeria, .galeria .section-header h2 {
+    color: #333;   
+}
+
+.bg-secondary .section-header h2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.section-header {
+    padding: 5px 15px;
+}
+
+.flex-columns p {
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        border: 0px;
+        border-radius: 0px;
+    }   
+}
+
+.navbar:before, .navbar:after {
+    content: ' ';
+}
+
+/* Slider Depoimentos */
+.depoimentos, .depoimentos .section-header h2, .depoimentos p  {
+    color: #333;   
+    background-color: #f4f4f4;
+}
+
+.depoimentos .section-header h2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.carousel-control {
+    width: 25px;
+}
