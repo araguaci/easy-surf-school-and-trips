@@ -15,3 +15,9 @@ Easy Surf School and Trips 🏄‍♀️🏄 Surf Coach e Surf Guide 💪 Free S
   - Surf Coach e Surf Guide 💪
   - Free Surf 🌎 Joaquina 🌊
   - Santa Catarina - Brasil
+
+## credenciado
+
+  - [F.E.C.E.E.S.S. ☆ A.C.E.S. SC](http://escolasdesurf.org.br/)
+  - Federação Catarinense de Especialistas e Escolas de Surf e Stand Up Paddle
+  - A.C.E.S. SC-Associação Catarinense das Escolas de Surf SC 
